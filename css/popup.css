@@ -1,0 +1,46 @@
+div#online-purchases {
+    z-index: 1000;
+    background: rgba(51, 51, 51, 0.8);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display:none;
+}
+.modal-content {
+    margin: 19% auto;
+    background: #fff;
+    width: 40%;
+    padding: 45px 50px;
+    box-shadow: 1px 1px 5px 0px #111;
+    height
+}
+.close-modal {
+    float: right;
+    position: absolute;
+    top: 260px;
+    right: 430px;
+    font-size: 40px;
+    cursor:pointer;
+}
+.body-modal {
+    font-size: 26px;
+}
+@media only screen and (max-width: 1200px){
+  .close-modal {
+      top: 230px;
+      right: 380px;
+  }
+}
+@media only screen and (max-width: 425px){
+  .modal-content {
+      margin: 50% auto;
+      width: 90%;
+      padding: 35px 30px;
+  }
+  .close-modal {
+      top: 185px;
+      right: 30px;
+  }
+}

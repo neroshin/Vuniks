@@ -1,0 +1,143 @@
+section {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center; }
+section:nth-of-type(1) {  }
+
+
+section#our-products {
+    background-size: cover;
+	background-image: url(http://vuniks.com/vuniks/wp-content/uploads/2019/01/shutterstock_707930080-1.jpg);
+}
+
+section#science-vuniks{
+	background-image: url(http://vuniks.com/vuniks/wp-content/uploads/2019/01/shutterstock_716948296.jpg);
+background-size:cover; 
+}
+
+section#philosophy {
+	background-image: url(http://vuniks.com/vuniks/wp-content/uploads/2019/01/picturemessage_ci0m3f0m.mts_.png); 
+background-size:cover;
+ }
+
+section#about { 
+	background-image: url(http://vuniks.com/vuniks/wp-content/uploads/2019/04/vuniks_about-1.jpg); 
+	background-size:cover;
+
+}
+
+section:nth-of-type(6) { 
+	background-image: url(http://vuniks.com/vuniks/wp-content/uploads/2019/01/shutterstock_1043518051.jpg); 
+}
+
+section:nth-of-type(7) { background-image: url(http://vuniks.com/vuniks/wp-content/uploads/2019/01/shutterstock_1129660346.jpg); }
+    section:nth-of-type(7) h2 {
+      margin-bottom: 20px; }
+
+
+.actives {
+  background-color: #333 !important; }
+  .actives div {
+    opacity: 1;
+    top: 50%;
+    
+	}
+
+.after {
+  opacity: 0; }
+  .after div {
+    opacity: 0;
+    top: -10%; }
+
+footer {
+  background-color: white; }
+  footer p {
+    text-align: center;
+    margin: 0;
+    padding: 20px; }
+    footer p a {
+      color: #13c0d7;
+      text-decoration: none; }
+      footer p a:hover {
+        text-decoration: underline; }
+
+/* Required Styles Start */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.unfixed {
+  position: relative;
+  width: 100%; }
+
+/* Required Styles End */
+
+/*Scroll Effect*/
+.scroll-effect{
+	padding: 0px 45px;
+}
+.scroll-effect a.scroll {
+  padding-top: 60px;
+  display: block;
+}
+.scroll-effect a.scroll span {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.scroll-effect a.scroll span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
