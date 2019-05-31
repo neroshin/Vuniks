@@ -2106,7 +2106,7 @@ body.woocommerce-cart.woocommerce-page td.product-thumbnail {
 	 min-width: 126px!important;
 }
 body.woocommerce-cart.woocommerce-page .page-content-section{
-	    background: url(http://localhost/Vuniks/wp-content/themes/vuniks_theme_dublicate/img/woo-single-prodect-background.jpg);
+	background: url(http://vuniks.com/vuniks/wp-content/uploads/2019/05/woo-single-prodect-background.jpg);
 }
 body.woocommerce-cart.woocommerce-page table.shop_table td ,
 body.woocommerce-cart.woocommerce-page .woocommerce table.shop_table 
@@ -2190,4 +2190,126 @@ select.orderby {
     padding: 5px;
     border-radius: 1px;
     border: 1px solid white;
+}
+tr.woocommerce-cart-form__cart-item.cart_item .product-quantity__container input[type=number]::-webkit-inner-spin-button, 
+tr.woocommerce-cart-form__cart-item.cart_item .product-quantity__container input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.circle-animeation .circle__box {
+  width: 61px;
+    height: 61px;
+    margin: 24px auto;
+    position: fixed;
+       bottom: -15px;
+    right: 82px;
+    z-index: 999;
+}
+
+.circle-animeation .circle__wrapper {
+   width: 32px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.circle-animeation .circle__wrapper--right {
+  right: 0;
+}
+
+.circle-animeation .circle__wrapper--left {
+  left: 0;
+}
+
+.circle-animeation .circle__whole {
+   width: 60px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.circle-animeation .circle__right {
+   border-top: 2px solid #fd0000;
+  border-right: 2px solid #fd0000;
+  right: 1px;
+  animation: circleRight 1s linear forwards;
+}
+
+.circle-animeation .circle__left {
+ border-bottom: 2px solid #fd0000;
+  border-left: 2px solid #fd0000;
+  left: 1px;
+  animation: circleLeft 1s linear forwards;
+}
+.circle-animeation  i.fa.fa-scissors, .circle-animeation  .circle__box {
+    z-index: 999999;
+}
+@keyframes circleRight {
+    0% {
+    transform: rotate(-135deg);
+  }
+  50%,
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes circleLeft {
+  0%,
+  50% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+.circle-animeation i.fa.fa-scissors, .circle-animeation .circle__box {
+    z-index: 999999;
+}
+
+.circle__box:after {
+    content: "You can click it for promocode";
+    color: white;
+    position: relative;
+    font-size: small;
+    top: -28px;
+    right: 110%;
+    width: 242px;
+    display: block;
+}
+.circle-animeation #curvedarrow {
+   width: 0;
+    position: fixed;
+    bottom: 85px;
+    right: 224px;
+    z-index: 99999;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #ff0000;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(-15deg);
+}
+#curvedarrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 4px solid #ff0000;
+    border-radius: 1px 0 0 0;
+       top: -166px;
+    left: -368px;
+    width: 380px;
+    height: 159px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }

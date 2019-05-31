@@ -3,6 +3,20 @@ jQuery(document).ready(function($) {
 	
 	
 	/* start script woo */
+	$( document ).on("click" ,"tr.woocommerce-cart-form__cart-item.cart_item .product-quantity__container button", function() {
+		var operationtag = $(this).attr("value");
+		var oldValue = $(this).closest('.product-quantity__container').find('input.input-text.qty').val();
+			var newVal = 0;
+		if (operationtag == "+") {
+			 newVal = parseFloat(oldValue) + 1;
+		}
+		if (oldValue > 0 && operationtag == "-") {
+		   newVal = parseFloat(oldValue) - 1;
+		
+		}
+		$(this).closest('.product-quantity__container').find('input.input-text.qty').val(newVal);
+		$('button[name="update_cart"]').prop("disabled", false);
+	});
 	
 	if(jQuery("ul.products").hasClass("columns-4") && jQuery("ul.products li").length !== 4){
 		jQuery("ul.products").removeClass("columns-4");
@@ -67,11 +81,22 @@ jQuery(document).ready(function($) {
 
 	/* end woo script */
 	
+	 closemodal = function(e){
+		if(getCookie("trigger_modalcode") != 0){
+			jQuery("div#coupon_modal").addClass("circle-animeation");
+			setTimeout(function() {
+			
+				document.cookie ='trigger_modalcode=0; Path=/;';
+				jQuery("div#popup_box").fadeOut();
+				jQuery("div#coupon_modal").removeClass("circle-animeation");
+			
+			},7000);
+		}
+		else{
+			jQuery("div#popup_box").fadeOut();
+		}
+	};
 	
-	jQuery("span#close_coupon").click(function(e){
-		document.cookie ='trigger_modalcode=0; Path=/;';
-		
-	})
 	jQuery("a.slider__nav-lnk").click(function(e){
 		e.preventDefault();
 		
