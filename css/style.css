@@ -2403,3 +2403,24 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
    margin-right: -14px;
     margin-top: -41px;
 }
+dl.rightpress_live_product_price dd {
+    display: block!important;
+    float: none;
+    margin: 0;
+}
+dl.rightpress_live_product_price dt {
+    display: block;
+	    text-align: center;
+}
+.rightpress_live_product_price {
+    margin-top: 0;
+}
+.product-type-simple dl.rightpress_live_product_price {
+   /*  display: none!important; */
+}
+div.single_variation_wrap div.single_variation span.price, .single-product div.product .single_variation .price{
+	display: block!important;
+}
+.woosb-title-inner a {
+    color: white!important;
+}
