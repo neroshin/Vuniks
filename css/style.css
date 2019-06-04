@@ -1964,7 +1964,9 @@ ins span.woocommerce-Price-amount.amount {
     padding: 34px 14%;
 }
 
-.wc-shortcode-loop .page-content-section p.price {
+.wc-shortcode-loop .page-content-section p.price  , 
+body.archive.post-type-archive.post-type-archive-product.woocommerce.woocommerce-page p.price  
+{
     color: #ddd!important;
     font-weight: 200!important;
     text-transform: uppercase;
@@ -1974,6 +1976,31 @@ ins span.woocommerce-Price-amount.amount {
     width: 70%;
     margin: auto;
 }
+/* shop */
+body.archive.post-type-archive.post-type-archive-product.woocommerce.woocommerce-page p.price {
+	 display: block!important;
+}
+body.archive.post-type-archive.post-type-archive-product.woocommerce.woocommerce-page span.price-description {
+    display: none;
+}
+body.archive.post-type-archive.post-type-archive-product.woocommerce.woocommerce-page .price span.woocommerce-Price-amount.amount {
+    font-weight: 100;
+    margin-bottom: .5em;
+    font-size: 14px;
+    color: #ddd!important;
+}
+body.archive.post-type-archive.post-type-archive-product.woocommerce.woocommerce-page a.button.add_to_cart_button {
+    font-size: 20px!important;
+    font-weight: 300;
+    color: #383838;
+    background: #fdfdfd!important;
+    border-radius: 2px;
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+/* end shop */
 .wc-shortcode-loop .page-content-section p.price span {
     text-decoration: none;
 }
@@ -2312,4 +2339,67 @@ tr.woocommerce-cart-form__cart-item.cart_item .product-quantity__container input
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
+}
+
+
+
+/* Change WC Acct Page Column Widths */
+@media only screen and (min-width: 769px) {
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 22%;
+	position: sticky;
+    top: 76px;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content { 
+    width: 75%;
+	margin-top: 21px;	
+  }
+}
+/* Style WC Account Endpoint Links */
+nav.woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+  padding-left: 0;
+  max-width:200px;
+  font-size: 17px;
+  line-height: 26px;
+}
+nav.woocommerce-MyAccount-navigation ul li a{
+	  padding: 8px 20px;
+	  display:block;
+}
+nav.woocommerce-MyAccount-navigation ul li {
+
+  background-color: rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active {
+  background-color: rgba(0,0,0,0.1);
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: rgba(0,0,0,0.8); cursor: default;
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active:after {
+  content: "";
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-left: 14px solid rgba(0,0,0,0.1);
+    border-bottom: 20px solid transparent;
+    float: right;
+    margin-right: -14px;
+    margin-top: -41px;
+}
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover {
+  background-color: rgba(0,0,0,0.07);
+}
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after { 
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 14px solid rgba(0,0,0,0.07);
+  border-bottom: 20px solid transparent;
+  float: right;
+   margin-right: -14px;
+    margin-top: -41px;
 }

@@ -9,7 +9,7 @@
 			//after_class : true,
 		};
 
-		$('section').stacked_strips(options);
+		$('.home section').stacked_strips(options);
 	}
   $(init);
 })(jQuery);

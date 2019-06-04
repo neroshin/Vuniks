@@ -200,7 +200,7 @@ function bbloomer_separate_login_form() {
 	
 	wp_localize_script( 'login-script-custom', 'ajax_login_object', array( 
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
-			'redirecturl' => home_url(),
+			'redirecturl' => home_url()."/my-account/",
 			'security' => wp_create_nonce('ajax-login-nonce-vuniks'),
 			'loadingmessage' => __('Sending user info, please wait...'),
 			
@@ -222,9 +222,9 @@ if ( ! is_user_logged_in() ) {
 }
 else{
 	 echo '<script type="text/javascript">
-           window.location = "'.get_home_url().'"
+           window.location = "'.get_home_url()."/my-account/".'"
       </script>'; 
-	header("Location: ".get_home_url(), true, 301);
+	header("Location: ".get_home_url()."/my-account/", true, 301);
 	exit;
 }
 return ob_get_clean();

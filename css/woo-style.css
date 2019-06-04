@@ -3176,9 +3176,11 @@ header.woocommerce-products-header {
     margin: 0!important;
     position: relative!important;
 }
-body.archive.tax-product_cat.woocommerce.woocommerce-page main#main {
+body.archive.tax-product_cat.woocommerce.woocommerce-page main#main , body.archive.post-type-archive.post-type-archive-product.woocommerce.woocommerce-page main#main {
     background-color: #242729;
 }
+
+
 body.archive.tax-product_cat.woocommerce.woocommerce-page ul.products.columns-3 {
     padding: 34px 14%;
 }
@@ -3233,3 +3235,7 @@ ul.products.columns-1, ul.products.columns-2 {
     width: fit-content;
     margin: auto;
 }
+body.archive.post-type-archive.post-type-archive-product.woocommerce.woocommerce-page ul.products.columns-3 {
+      padding: 34px 17%;
+}
+
